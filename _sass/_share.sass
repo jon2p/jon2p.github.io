@@ -1,0 +1,50 @@
+.share-div
+  margin-top: 50px
+
+  h2
+    text-transform: uppercase
+    margin: 0
+
+  .share-box
+    display: flex
+    padding: 0
+    border-top: 1px solid rgba(181, 181, 181, 0.5)
+    border-bottom: 1px solid rgba(181, 181, 181, 0.5)
+
+    list-style: none
+
+    .share-item
+      flex: 1
+      text-align: center
+      margin: 0
+      border-right: 1px solid rgba(181, 181, 181, 0.5)
+      &:last-child
+        border-right: none
+
+      .share-link
+        display: block
+        padding: 8px
+        font-size: 14px
+        transition: .4s ease-in-out
+        &:hover
+          background-color: $bg-white
+
+          .icon--ei-sc-twitter
+            fill: $twitter-color !important
+            transition: .4s ease-in-out
+
+          .icon--ei-sc-facebook
+            fill: $facebook-color !important
+            transition: .4s ease-in-out
+
+      .facebook
+        background-color: $facebook-color
+
+      .twitter
+        background-color: $twitter-color
+
+  .social-icon
+    fill: $bg-white !important
+
+  .icon
+    vertical-align: bottom

@@ -1,0 +1,50 @@
+.sidebar
+  width: 100vw
+  background-color: $bg-white
+
+  .cta-sidebar
+    background: $bg-black
+    padding: 3rem
+
+    h2, p
+      color: $bg-white
+      text-align: center
+
+    h2
+      margin: 0
+      text-transform: uppercase
+
+    p
+      margin-bottom: 3rem
+
+    .name-div, .email-div
+      width: 100%
+
+    .send
+      font-size: ms(0)
+
+    .label
+      text-align: center
+      left: auto
+      margin-left: 50%
+      transform: translate(-50%, 0)
+
+  .book-ad
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    h2
+      text-transform: uppercase
+
+    img
+      width: 60%
+      height: 60%
+
+
+@include media-query($on-palm)
+  .sidebar
+    width: calc(30vw - 60px)
+    float: right
+    padding-top: 1rem

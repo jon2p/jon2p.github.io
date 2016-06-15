@@ -1,0 +1,50 @@
+<nav class="navbar">
+
+  <a href="{{ site.url }}">
+    <img class="logo" src="{{site.url}}/img/logo.jpg">
+  </a>
+
+  <div class="menu large">
+
+    <p class="editable">
+
+      <a class="menu-item" href="#">Resources</a>
+      <a class="menu-item" href="{{ site.url }}/about">About</a>
+      <a class="menu-item" href="#">Press</a>
+      <a class="menu-item" href="{{ site.url }}/contact">Contact</a>
+
+    </p>
+
+  </div>
+
+  <div class="menu mobile">
+
+    <div class="navigation">
+      <div class="button-container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </div>
+
+      <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+          <ul>
+            <li class="editable"><a class="menu-item" href="#">Resources</a></li>
+            <li class="editable"><a class="menu-item" href="{{ site.url }}/about">About</a></li>
+            <li class="editable"><a class="menu-item" href="#">Press</a></li>
+            <li class="editable"><a class="menu-item" href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    $('#toggle').click(function() {
+       $(this).toggleClass('active');
+       $('#overlay').toggleClass('open');
+      });
+  </script>
+
+</nav>

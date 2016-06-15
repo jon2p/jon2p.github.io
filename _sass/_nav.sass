@@ -1,0 +1,50 @@
+.navbar
+  padding: 0.5rem 1rem
+  position: relative
+  width: 100vw
+  background-color: $bg-white
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  .logo
+    width: 30vw
+    max-width: 125px
+    height: auto
+
+  .large
+    display: none
+
+  .menu-item
+    margin-right: 6rem
+    display: inline-block
+    &::after
+      display: block
+      content: ''
+      background-color: $brand-color
+      width: 0%
+      height: 5px
+      transition: width .3s
+    &:hover
+      color: $brand-color
+      &::after
+        width: 100%
+    &:last-child
+      margin-right: 0
+    &:first-child
+      margin-left: 6rem
+
+
+@include media-query($on-palm)
+
+  .navbar
+    padding: 0.5rem 0
+    justify-content: flex-start
+
+    .logo
+
+    .large
+      display: block
+
+    .mobile
+      display: none

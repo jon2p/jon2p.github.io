@@ -1,0 +1,51 @@
+.landing
+  max-width: 100vw
+  overflow-x: hidden
+  width: 100vw
+  background-color: $bg-black
+
+  display: flex
+
+  .landing-copy
+    max-width: 450px
+    padding: 10px
+    z-index: 100
+    padding-bottom: 100px
+
+    .landing-p
+      text-transform: uppercase
+      color: $bg-white
+      font-size: ms(1) * 1.3
+      font:
+        family: "Oswald", sans-serif
+        weight: 700
+
+      .red
+        color: $brand-color
+
+  .landing-img
+    max-height: 100vh
+    width: auto
+    bottom: 0
+    left: 0
+    position: fixed
+    background-color: $bg-black
+
+@include media-query($on-palm)
+  .landing
+    min-height: 100vh
+
+    .landing-copy
+      min-width: 500px
+      max-width: 50vw
+      padding: 60px
+
+      .landing-p
+        font-size: ms(2) * 0.9
+
+    .landing-img
+      max-height: none
+      max-width: none
+      height: 100vh
+      left: auto
+      right: 0

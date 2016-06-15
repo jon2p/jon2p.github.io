@@ -1,0 +1,81 @@
+.main
+  max-width: 800px
+
+  .post
+    position: relative
+    overflow: auto
+
+    .post-title
+      margin: 0
+      font-size: ms(1) * 1.25
+
+    .meta-date
+      margin-top: 0
+      text-transform: uppercase
+      font-style: italic
+      color: rgba(17, 17, 17, 0.3)
+
+    .meta-after
+      overflow: auto
+      width: 100%
+
+      .read-more
+        float: left
+        a
+          color: $brand-color
+
+      .comments
+        float: right
+
+        &::before
+          content: '\f0e5'
+          font-family: FontAwesome
+          font-size: ms(1) * 0.7
+          margin-right: 0.25rem
+          padding-right: 0.5rem
+          border-right: 1px solid rgba(181, 181, 181, 0.5)
+
+      .read-more, .comments
+        text-transform: uppercase
+        font-size: ms(0) * 0.9
+
+  .pagination
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+    .older, .newer
+      padding: 1rem
+      transition: all 0.15s ease-in
+      overflow: auto
+      display: flex
+      align-items: center
+      color: $brand-color
+    .older:hover, .newer:hover
+      background-color: $brand-color
+      color: $bg-white
+      transition: all 0.15s ease-in
+
+    .older::after, .newer::before
+      font-family: $title-font-family
+      text-transform: uppercase
+
+    .older::after
+      content: "Older Posts"
+    .newer::before
+      content: "Newer Posts"
+
+@include media-query($on-palm)
+  .main
+    .post
+      .post-title
+        font-size: ms(2)
+      .meta-date
+
+      .meta-after
+        .read-more, .comments
+          font-size: ms(0) * 1.2
+        .comments::before
+          font-size: ms(1) * 1.2
+          margin-right: 1rem
+          padding-right: 1.5rem

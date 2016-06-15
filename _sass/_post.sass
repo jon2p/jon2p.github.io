@@ -1,0 +1,65 @@
+.content-wrapper
+
+  .post-title
+    margin: 0
+    font-size: ms(1) * 1.25
+
+  .meta-date
+    margin-top: 0
+    text-transform: uppercase
+    font-style: italic
+    color: rgba(17, 17, 17, 0.3)
+
+  h2
+    text-align: center
+
+  .thumbnail-img
+    width: 275px
+    height: auto
+    text-align: right
+    float: right
+
+  .recommendation
+    overflow: auto
+    position: relative
+    height: 300px
+    display: flex
+    justify-content: space-around
+    a
+      text-align: center
+    img
+      width: 50%
+
+  .cta-post
+    padding: 1rem 2rem 4rem 2rem
+    background-color: $action-color
+
+    h2
+      text-transform: uppercase
+
+    h2, p
+      color: $text-color
+      text-align: center
+
+    .send
+      color: $action-color
+      background-color: $bg-black
+
+    .label
+      transition: all 0.15s
+
+    .name:focus, .email:focus
+      border: 2px solid $action-color
+      box-shadow: 0 0 10px $action-color
+
+    .input:focus + .label
+      transform: translate3d(0, 0, 0)
+      color: inherit
+      opacity: 0
+      transition: all 0.15s
+
+    .input:valid + .label
+      transform: translate3d(0, 0, 0)
+      color: inherit
+      opacity: 0
+      transition: all 0.15s

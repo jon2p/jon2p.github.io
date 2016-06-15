@@ -1,0 +1,93 @@
+$cta-text: $grey-color-light
+$cta-bg: $bg-white
+$button-bg: $action-color
+$button-text: $cta-bg
+
+.landing-cta
+
+.input
+  border:
+    style: solid
+    color: $cta-bg
+    width: 1px
+  font-family: $base-font-family
+  font-weight: 300
+  font-size: ms(0)
+  -webkit-appearance: none
+  outline: none
+  background-color: $cta-bg
+  width: 100%
+  padding: 0 1rem
+
+.name
+  border-right-width: 1px
+
+.name:focus, .email:focus
+  border: 2px solid $action-color
+  box-shadow: 0 0 10px $action-color
+
+.name:valid, .email:valid
+  border: 2px solid $action-color
+  box-shadow: 0 0 10px $action-color
+
+.input:focus + .label
+  opacity: 0
+
+.input:valid + .label
+  opacity: 0
+
+.name-div, .email-div
+  width: 50%
+  margin-bottom: 0.5rem
+
+.name-div
+  float: left
+  width: 45%
+
+.email-div
+  float: right
+  width: 52.5%
+
+.clear-div
+  clear: both
+
+.send-div
+  margin-top: 0.5rem
+
+.name-div, .email-div, .send-div
+  position: relative
+  height: 70px
+
+.name, .email, .send
+  height: 70px
+
+.label
+  font-family: $base-font-family
+  cursor: text
+  position: absolute
+  top: .9rem
+  left: .9rem
+  color: $cta-text
+  background-color: transparent
+  padding: .6rem .3rem 0
+  will-change: opacity
+  transition: all 0.15s ease-in-out
+  pointer-events: none
+
+.send
+  position: relative
+  background-color: $button-bg
+  color: $text-color
+  border: solid 1px $button-bg
+  cursor: pointer
+  transition: all 0.15s ease-in-out
+
+  text-transform: uppercase
+  font-weight: 600
+  font-family: $title-font-family
+  font-size: ms(0) * 1.2
+  letter-spacing: 0.1rem
+
+@include media-query($on-palm)
+  .send:hover
+    transform: scale(1.05)
