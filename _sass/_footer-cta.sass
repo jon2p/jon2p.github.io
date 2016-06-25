@@ -1,0 +1,16 @@
+.cta-footer
+  display: none
+
+@include media-query($on-palm)
+  .cta-footer
+    display: block
+    position: relative
+    width: 100vw
+    background-color: $bg-black
+    padding: 3rem 3rem 6rem 3rem
+
+    .cta
+      width: 60vw
+
+    h2, p
+      color: $bg-white

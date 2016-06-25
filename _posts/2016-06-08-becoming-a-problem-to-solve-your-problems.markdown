@@ -1,10 +1,30 @@
 ---
 layout: post
-title:  "Becoming A Problem To Solve Your Problems"
-date:   2016-06-08
+title: Becoming A Problem To Solve Your Problems
+date: 2016-06-08T00:00:00.000Z
 comments: true
+thumbnail: img/posts/rubiks-cube.png
+excerpt: "
+When faced with any type of opposition, there is one thing you can do that will always make winning significantly easier.
+<br><br>
+I have used this tool in my chess games, my boxing matches, with bullies when I was younger, and with bosses and coworkers who may have been annoying or stifling. It works in street fights and it works in civil negotiations.
+<br><br>
+The beauty of this particular thing is that, while having skill and technique help, it is not necessary to be successful when using it.
+<br><br>
+While success may not be guaranteed (are there ever any guarantees in life?), you will come out of many situations with the upper hand—if not decidedly victorious—if you do this one thing when you can do nothing else.
+<br><br>
+What is this magically simple technique that anyone, regardless of the level of skill they face in their opposition, can use to give themselves a better chance of victory?"
+recommendations: false
+recommendations-heading:
+recommendation-first-link:
+recommendation-first-image:
+recommendation-second-link:
+recommendation-second-image:
+recommendation-third-link:
+recommendation-third-image:
 ---
-<img class="thumbnail-img" src="{{site.url}}/img/posts/rubiks-cube.png">
+
+
 When faced with any type of opposition, there is one thing you can do that will always make winning significantly easier.
 
 I have used this tool in my chess games, my boxing matches, with bullies when I was younger, and with bosses and coworkers who may have been annoying or stifling. It works in street fights and it works in civil negotiations.
@@ -14,8 +34,6 @@ The beauty of this particular thing is that, while having skill and technique he
 While success may not be guaranteed (are there ever any guarantees in life?), you will come out of many situations with the upper hand—if not decidedly victorious—if you do this one thing when you can do nothing else.
 
 What is this magically simple technique that anyone, regardless of the level of skill they face in their opposition, can use to give themselves a better chance of victory?
-
-<!--more-->
 
 ## Become a Problem
 
@@ -31,8 +49,7 @@ These days, my fighting is conducted in a manner more condoned by the public, in
 
 You’d think that’d be enough, but I think I got my ass kicked so they didn’t take me seriously. However, each time one of them started anything, we went through the same process again. If one kid started a fight, I ended up challenging every kid around that day and they either backed down or we got into a scuffle where they were beat up. Very few people enjoy being beaten, and they weren’t some of the few. It got to the point that, by the end of that summer, people were actively checking other people that attempted to fight me because it just wasn’t worth the cost of doing business.
 
-![This dude better become a problem REAL fast](http://edlatimore.com/wp-content/uploads/2016/06/fighting.jpeg)
-This dude better become a problem REAL fast
+![This dude better become a problem REAL fast](http://edlatimore.com/wp-content/uploads/2016/06/fighting.jpeg)This dude better become a problem REAL fast
 
 I’ve seen the same thing in boxing. There was a fighter in our amateur circuit that was a big fan of holding. I mean, a little hugging is normal, but this guy took it to extremes. He’d sneak little annoying shots in while he’s doing it, making the whole fight an ugly affair. I can’t tell you how many times this style of fighting frustrated the hell out of his opponents. They got so frustrated they’d abandon the ability to concentrate effectively, thus ending up the losers. I don’t think this guy is one of the most skilled fighters ever, but he certainly had an impressive list of accolades. Most people simply don’t want to—or can’t—fight that kind of fight so they cave.
 

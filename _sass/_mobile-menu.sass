@@ -124,11 +124,13 @@ nav
         &:nth-of-type(3)
           animation-delay: .45s
 
-    nav
+    .overlay-menu
       position: relative
       height: 70%
       max-height: none
       text-align: center
+      background-color: $secondary-menu
+      padding: 2rem 0
 
     ul
       list-style: none
@@ -139,12 +141,16 @@ nav
       height: 100%
 
       li
-        display: block
+        display: flex
+        justify-content: center
+        align-items: center
         height: 25%
         height: calc(100% / 4)
         min-height: 50px
         position: relative
         opacity: 0
+        margin-bottom: 0.5rem
+        margin-top: 0.5rem
 
         a
           display: block
@@ -152,6 +158,9 @@ nav
           color: $primary-menu
           text-decoration: none
           overflow: hidden
+          &:first-child, &:last-child
+            margin-left: 0
+            margin-right: 0
 
           &:hover:after,
           &:focus:after,

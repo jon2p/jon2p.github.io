@@ -1,8 +1,8 @@
 <section class="main">
 
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
 
-    <article class="post">
+    <article class="post article-wrapper">
       <h1 class="post-title">
         <a href="{{ post.url }}">
           {{ post.title }}
@@ -13,9 +13,9 @@
           {{ post.date | date: "%b %-d, %Y" }}
         </time>
       </h5>
-      <p>
-        {{ post.excerpt }}
-      </p>
+        <img class="thumbnail-img" src="{{ site.url }}/{{ post.thumbnail }}">
+        <p>{{ post.excerpt }}</p>
+
       <div class="meta-after">
         <h5 class="read-more">
           <a class="pretty-link editable" href="{{ post.url }}">Keep Reading...</a>

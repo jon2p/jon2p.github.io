@@ -7,16 +7,33 @@ layout: default
 
 <section class="content-wrapper">
 
-  <h1 class="post-title">
-    {{page.title}}
-  </h1>
-  <h5 class="meta-date">
-    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-      {{ page.date | date: "%b %-d, %Y" }}
-    </time>
-  </h5>
+  <article class="article-wrapper">
 
-  {{ content }}
+    <h1 class="post-title">
+      {{page.title}}
+    </h1>
+    <h5 class="meta-date">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: "%b %-d, %Y" }}
+      </time>
+    </h5>
+
+    <img class="thumbnail-img" src="{{ site.url }}/{{ page.thumbnail }}">
+      {{ content }}
+
+    {% if page.recommendations == true %}
+      <div class="recommendations-div">
+          <h2>{{ page.recommendations-heading }}</h2>
+          <div class="recommendation">
+              {% unless page.recommendation-first-link == blank %}<a href="{{ page.recommendation-first-link }}"><img src="{{ site.url }}/{{ page.recommendation-first-image }}"></a>{% endunless %}
+              {% unless page.recommendation-second-link == blank %}<a href="{{ page.recommendation-second-link }}"><img src="{{ site.url }}/{{ page.recommendation-second-image }}"></a>{% endunless %}
+              {% unless page.recommendation-third-link == blank %}<a href="{{ page.recommendation-third-link }}"><img src="{{ site.url }}/{{ page.recommendation-third-image }}"></a>{% endunless %}
+          </div>
+      </div>
+    {% endif %}
+
+  </article>
+
 
   {% include share.html %}
   {% include post-cta.html %}
@@ -25,5 +42,6 @@ layout: default
 </section>
 
   {% include sidebar.html %}
+  {% include footer.html %}
 
 </main>

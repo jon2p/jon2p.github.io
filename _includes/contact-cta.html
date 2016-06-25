@@ -1,19 +1,8 @@
-<div class="cta cta-contact">
-
-  <h2 class="editable">... And sign up to get more!</h2>
-  <p class="editable">
-    Enter your first name and email address below
-    to be notified whenever I've written something
-    you'll enjoy reading.
-    I will never send you spam.
-    Just high-quality content.
-  </p>
-
-  <form class="sidebar-cta" action="https://formspree.io/your@email.com" method="POST">
+  <form class="contact-form" action="https://formspree.io/edward.latimore@gmail.com" method="POST">
 
     <div class="name-div">
       <input class="name input" type="text" id="name" name="name" required>
-      <label for="name" class="label">First name</label>
+      <label for="name" class="label">Name</label>
     </div>
 
     <div class="email-div">
@@ -21,16 +10,15 @@
       <label for="email" class="label">Email</label>
     </div>
 
-    <div class="clear-div">
+    <div class="message-div">
+      <textarea class="message input" id="message" name="message" rows="10" required></textarea>
+      <label for="message" class="label">Your message here</label>
     </div>
 
     <input type="hidden" name="_next" value="#">
     <input type="text" name="_gotcha" style="display:none" />
 
     <div class="send-div">
-      <button class="send input" type="submit">I Wanna Be A Winner!</button>
+      <button class="send input" type="submit">Send message</button>
     </div>
-
   </form>
-
-</div>

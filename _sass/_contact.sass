@@ -1,0 +1,65 @@
+.contact-form
+  border: 1px solid $grey-color-light
+  border-radius: 5px
+  z-index: 100
+
+  .input
+    border:
+      style: solid
+      color: $grey-color-light
+      width: 0 0 1px
+    padding: 1.5rem 1rem
+    -webkit-appearance: none
+    outline: none
+    background: transparent
+    width: 100%
+
+  .name
+    border-right-width: 1px
+
+  .name-div, .email-div
+    width: 50%
+
+  .name-div
+    float: left
+
+  .email-div
+    float: right
+
+  .message-div
+    width: 100%
+    resize: none
+    clear: both
+
+  .send-div
+    padding: 1rem
+
+  .name-div, .email-div, .message-div, .send-div
+    position: relative
+
+  .send-div
+    height: auto
+
+  .label
+    position: absolute
+    top: .9rem
+    left: .9rem
+    color: $grey-color-light
+    cursor: text
+    background: $bg-white
+    padding: .5rem .3rem 0
+    pointer-events: none
+
+  .send
+    position: relative
+    background: $action-color
+    color: $bg-white
+    border-radius: .5rem
+    border: 0px
+    padding: 1.5rem 0
+    text-transform: uppercase
+    font-weight: 600
+    font-family: $title-font-family
+    letter-spacing: 0.1rem
+    cursor: pointer
+    height: auto

@@ -1,5 +1,11 @@
 .content-wrapper
 
+  .center
+    text-align: center
+
+    a, p
+      display: block
+
   .post-title
     margin: 0
     font-size: ms(1) * 1.25
@@ -14,21 +20,22 @@
     text-align: center
 
   .thumbnail-img
-    width: 275px
+    width: 200px
     height: auto
     text-align: right
     float: right
+    margin-left: 10px
 
   .recommendation
-    overflow: auto
+    overflow: visible
     position: relative
-    height: 300px
     display: flex
     justify-content: space-around
     a
       text-align: center
     img
-      width: 50%
+      width: auto
+      max-width: 300px
 
   .cta-post
     padding: 1rem 2rem 4rem 2rem
@@ -63,3 +70,15 @@
       color: inherit
       opacity: 0
       transition: all 0.15s
+
+  .article-wrapper
+
+
+@include media-query($on-palm)
+  .content-wrapper
+    .thumbnail-img
+      width: 275px
+      height: auto
+      text-align: right
+      float: right
+      margin-left: 10px
